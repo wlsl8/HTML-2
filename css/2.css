@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.list{
+    max-width: 1280px;
+    width: calc(100%-40px);
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.list .box{
+    background-color: aquamarine;
+    width: 23.43%;
+    /* 300 / 1280 x 100=> 23.43 */
+    position: relative;
+}
+.list .box::before{
+    content: '';
+    padding-bottom: 100%;
+    display: block;
+}
+.list .box .item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: beige;
+}

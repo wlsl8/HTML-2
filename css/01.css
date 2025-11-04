@@ -1,0 +1,49 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+section{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+
+div.조상{
+    background-color: beige;
+}
+.조상 {
+    width: 1280px;
+    background-color: blueviolet;
+    margin: 0 auto;
+}
+.조상 .부모{
+    background-color: greenyellow;
+    font-size: 20px;
+}
+.조상 .부모 .쌍둥이{
+    font-weight: bold;
+}
+.조상 .부모 .쌍둥이.쌍둥이1{
+    color: red;
+}
+.조상 .부모 .쌍둥이.쌍둥이2{
+    color: blue;
+}
+.조상 .부모 a.btn{
+    background-color: olive;
+    padding: 20px;
+    display: inline-block;
+    color: brown;
+    font-size: 25px;
+}
